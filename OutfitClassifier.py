@@ -13,7 +13,8 @@ from huggingface_hub import hf_hub_download
 @st.cache_resource
 
 def load_covid_model():
-    
+
+    token = st.secrets.get("HF_TOKEN", "hf_...blSd")
     model_path = hf_hub_download(
                         repo_id="brijesh-singh/outfitClassifier",
                         filename="best_tuned_vgg16.keras",
