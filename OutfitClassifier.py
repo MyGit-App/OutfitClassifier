@@ -40,7 +40,7 @@ classes = ["Blazer",
             ]
 
 
-#st.image("banner.png")
+st.image("banner.png")
 
 uploaded_file = st.file_uploader(
     "Upload Outfit Image",
